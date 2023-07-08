@@ -32,6 +32,17 @@ body {
     align-items: center;
 }
 
+.search-img {
+    height: 60%;
+    justify-self: center;
+}
+
+.search {
+    background-color: rgb(236, 236, 236);
+    border-radius: 14px;
+    height: 60%;
+}
+
 
 
 .sidebar {
