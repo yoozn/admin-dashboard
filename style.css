@@ -179,12 +179,21 @@ body {
 }
 
 .project-item {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.808);
     border-left: solid 10px rgb(27, 121, 209);
     border-radius: 12px;
     display:grid;
     padding: 20px 15px;
     grid-template-rows: .5fr 3fr 1fr;
+    transition: .4s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    border-right: solid 4px rgb(27, 121, 209);
+    border-top: solid 4px rgb(27, 121, 209);
+    border-bottom: solid 4px rgb(27, 121, 209);
+    background-color: white;
 }
 
 .project-item-title {
