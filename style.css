@@ -9,7 +9,7 @@
     /* border: 2px solid yellow; */
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    border:2px solid yellow;
+    /* border:2px solid yellow; */
 }
 
 body {
@@ -161,27 +161,55 @@ body {
 .main {
     background-color: rgb(226, 226, 226);
     display:grid;
-    grid-template-columns: 4fr 1fr;
-    padding: 15px 10px;
+    grid-template-columns: 4fr 1.5fr;
+    padding: 25px 20px;
+}
+
+.project-header-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
 .projects {
     display:grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    /* overflow: auto; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
 .project-item {
     background-color: white;
-    border-left: solid 4px orange;
+    border-left: solid 10px rgb(27, 121, 209);
+    border-radius: 12px;
     display:grid;
-    width: 450px;
-    height: 200px;
     padding: 20px 15px;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: .5fr 3fr 1fr;
+}
+
+.project-item-title {
+    font-weight: bold;
+}
+
+.project-item-description {
+    color: rgb(121, 118, 118);
+}
+
+.project-buttons {
+    display:grid;
+    justify-items: end;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    /* display: flex;
+    justify-content: end; */
+    /* gap: 0; */
+}
+
+.project-item > .project-buttons img {
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    /* border: 3px solid black; */
 }
 
 .right-bar {
