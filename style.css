@@ -161,11 +161,12 @@ body {
 .main {
     background-color: rgb(226, 226, 226);
     display:grid;
-    grid-template-columns: 4fr 1.5fr;
+    grid-template-columns: 4fr 1fr;
     padding: 25px 20px;
+    gap: 25px;
 }
 
-.project-header-text {
+.project-header-text, .section-name {
     font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 10px;
@@ -206,12 +207,69 @@ body {
 }
 
 .project-item > .project-buttons img {
-    height: 35px;
+    height: 30px;
     margin: 0;
     padding: 0;
     /* border: 3px solid black; */
 }
 
 .right-bar {
+    display:grid;
+    grid-template-rows: 0fr 0fr;
+    gap: 35px;
+}
 
+.section {
+    display:grid;
+    grid-template-rows: 0fr 0fr;
+}
+
+.section-content {
+    background-color: white;
+    border-radius: 14px;
+    padding: 15px;
+}
+
+.announcements-content {
+    display:grid;
+    grid-template-rows: repeat(3, 0fr);
+    gap: 10px
+}
+
+.announcement-name {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.announcement-description {
+    font-size: .7rem;
+    color: rgb(122, 122, 122);
+}
+
+.announcement-1, 
+.announcement-2 {
+    padding-bottom: 10px;
+    border-bottom: solid 2px rgb(190, 190, 190);
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    align-items: center;
+}
+
+.trend > img {
+    height: 55px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+.trend-name {
+    font-size: .9rem;
+}
+
+.trend-description {
+    font-size: .8rem;
+    color: rgb(114, 114, 114)
 }
