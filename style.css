@@ -6,7 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -20,6 +20,19 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
 }
+
+.header {
+    display:grid;
+    grid-template-rows: 1fr 1.5fr;
+}
+
+.header-top {
+    display:grid;
+    grid-template-columns: 1fr 12fr 3fr 1fr 2fr 5fr;
+    align-items: center;
+}
+
+
 
 .sidebar {
     grid-column: 1 / 2;
