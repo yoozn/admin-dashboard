@@ -64,6 +64,49 @@ body {
     outline: none;
 }
 
+.header-bottom {
+    display: grid;
+    grid-template-columns: .5fr 6fr 3fr;
+}
+
+.profile-img-2 {
+    height: 80px;
+    margin-left: 20px;
+}
+
+.greeting {
+    align-self: center;
+    text-align: start;
+    margin-left: 5px;
+}
+
+.greeting-text {
+    font-size: .8rem;
+}
+
+.username {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-button {
+    height: 35px;
+    width: 85px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(85, 162, 224);
+    color: white;
+    font-weight: bold;
+}
+
 .main {
     background-color: rgb(226, 226, 226);
 }
@@ -86,6 +129,10 @@ body {
     margin-left: -10px;
 }
 
+.logo > img {
+    height: 40px;
+}
+
 .logo-text {
     color: var(--color-sidebar);
     font-weight: 900;
@@ -102,7 +149,7 @@ body {
 }
 
 .side-item > .item-img {
-    height: 70%;
+    height: 25px;
     color: var(--color-sidebar);
 }
 
