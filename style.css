@@ -208,13 +208,41 @@ body {
     background-color: rgb(255, 251, 218);
 }
 
+.calculator-project:hover {
+    background: url("images/calculator2.png");
+    background-size: 100%;
+    background-position: 40% 15%;
+    color:white;
+}
+
+.signup-project:hover {
+    background: url("images/signup.png");
+    background-size: 300%;
+    background-position: 20% 75%;
+}
+
+.colourSketch-project:hover {
+    background: url("images/coloursketch.png");
+    background-size: 130%;
+    background-position: 100% 60%;
+    color: rgb(255, 255, 255);
+}
+
+.rps-project:hover {
+    background: url("images/rps.png");
+    background-size: 300%;
+    background-position: 50% 10%;
+    color:white;
+}
+
 .project-item-title {
     font-weight: bold;
 }
 
 .project-item-description {
-    color: rgb(121, 118, 118);
+    color: inherit;
 }
+
 
 .project-buttons {
     display:grid;
@@ -231,8 +259,12 @@ body {
     height: 30px;
     margin: 0;
     padding: 0;
+    background-color: aquamarine;
+    border-radius: 12px;
     /* border: 3px solid black; */
 }
+
+
 
 .right-bar {
     display:grid;
@@ -300,3 +332,4 @@ body {
     bottom: 0;
     left: 43%;
 }
+
